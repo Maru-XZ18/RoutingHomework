@@ -22,8 +22,8 @@ router.put('/person/:id', function(req, res, next) {
     // note we are adding any data sent to the endpoint to the array. this really needs some checking.
    res.status(200);
 
-   var index = data.indexOf(person => {
-     return person.id === req.params.id;
+   var index = data.indexOf(person =>{
+    return person.id ===req.params.id;
    });
 
    data[index] = req.body;
